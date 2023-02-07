@@ -1,13 +1,13 @@
 import requests
 
 url_geocode = "http://geocode-maps.yandex.ru/1.x/"
-apiKey = "40d1649f-0493-4b70-98ba-98533de7710b"
+apikey = "40d1649f-0493-4b70-98ba-98533de7710b"
 
 
 def get_spn(toponym):
     response = requests.get(url_geocode, params={
         "geocode": toponym,
-        "apikey": apiKey,
+        "apikey": apikey,
         "format": "json"
     })
     try:
